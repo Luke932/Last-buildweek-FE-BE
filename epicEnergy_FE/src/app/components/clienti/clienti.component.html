@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Partita Iva</th>
+        <th scope="col">Ragione Sociale</th>
+        <th scope="col">Email aziendale</th>
+        <th scope="col">Pec</th>
+        <th scope="col">Telefono aziendale</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">Fatturato annuo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clienti; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ cliente.partitaIva }}</td>
+        <td>{{ cliente.ragioneSociale }}</td>
+        <td>{{ cliente.email }}</td>
+        <td>{{ cliente.pec }}</td>
+        <td>{{ cliente.telefono }}</td>
+        <td>{{ cliente.nomeContatto }}</td>
+        <td>{{ cliente.cognomeContatto }}</td>
+        <td>{{ cliente.fatturaAnnuale }}</td>
+      </tr>
+    </tbody>
+  </table>
